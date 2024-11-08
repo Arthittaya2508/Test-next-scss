@@ -1,0 +1,46 @@
+// @import "@/styles/_color.scss";
+// การตั้งค่าการรีเซ็ตสไตล์พื้นฐาน
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// การตั้งค่าฟอนต์และสีพื้นหลัง
+body {
+  font-family: "Arial", sans-serif; // หรือฟอนต์อื่นที่คุณต้องการ
+  line-height: 1.6;
+  background-color: #f9f9f9; // สีพื้นหลังของหน้าเว็บ
+  color: #333; // สีตัวอักษรหลัก
+}
+
+// การตั้งค่าองค์ประกอบพื้นฐาน
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+// ตั้งค่าปุ่มเริ่มต้น
+button {
+  background-color: #007bff; // สีพื้นหลังปุ่ม
+  color: #fff; // สีตัวอักษรบนปุ่ม
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px; // มุมโค้งมน
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #0056b3; // สีเมื่อเลื่อนเมาส์ไปบนปุ่ม
+  }
+}
