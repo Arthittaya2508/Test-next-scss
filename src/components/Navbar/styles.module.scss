@@ -4,22 +4,22 @@ $primary-color: #3498db;
   padding: 20px;
   background-color: $primary-color;
 
-  .header {
-    font-size: 2em;
-    color: white;
-  }
+  // .header {
+  //   font-size: 2em;
+  //   color: white;
+  // }
 
-  .button {
-    border: none;
-    background-color: darken($primary-color, 10%);
-    padding: 10px;
-    color: #fff;
-    cursor: pointer;
+  // .button {
+  //   border: none;
+  //   background-color: darken($primary-color, 10%);
+  //   padding: 10px;
+  //   color: #fff;
+  //   cursor: pointer;
 
-    &:hover {
-      background-color: lighten($primary-color, 10%);
-    }
-  }
+  //   &:hover {
+  //     background-color: lighten($primary-color, 10%);
+  //   }
+  // }
 
   .nav {
     background-color: #3498db; // สีพื้นหลังของ navbar
