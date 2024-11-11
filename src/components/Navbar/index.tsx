@@ -3,14 +3,14 @@ import styles from "./styles.module.scss";
 
 function Navbar() {
   return (
-    <div className={styles.nav}>
-      <nav>
-        <div className={styles.logo}>MyLogo</div>
-        <div className={styles["nav-item"]}>Home</div>
-        <div className={styles["nav-item"]}>About</div>
-        <div className={styles["nav-item"]}>Contact</div>
-      </nav>
-    </div>
+    <nav className={styles.nav}>
+      <div className={styles.logo}>MyLogo</div>
+      <div className={styles.navItems}>
+        <div className={styles.navItem}>Home</div>
+        <div className={styles.navItem}>About</div>
+        <div className={styles.navItem}>Contact</div>
+      </div>
+    </nav>
   );
 }
 

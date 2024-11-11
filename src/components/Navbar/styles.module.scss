@@ -1,50 +1,34 @@
+@import "@/styles/variables.scss";
 $primary-color: #3498db;
 
-.container {
-  padding: 20px;
-  background-color: $primary-color;
+.nav {
+  display: flex; // เพิ่ม display: flex ที่ container หลัก
+  background-color: #1c2b4e;
+  padding: 10px 20px;
+  // justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
-  // .header {
-  //   font-size: 2em;
-  //   color: white;
-  // }
+  // เพิ่ม container สำหรับ nav items
+  .nav-items {
+    display: flex;
+    align-items: center;
+  }
 
-  // .button {
-  //   border: none;
-  //   background-color: darken($primary-color, 10%);
-  //   padding: 10px;
-  //   color: #fff;
-  //   cursor: pointer;
+  .nav-item {
+    display: flex;
+    margin: 0 10px;
+    font-size: 1rem;
+    cursor: pointer;
 
-  //   &:hover {
-  //     background-color: lighten($primary-color, 10%);
-  //   }
-  // }
-
-  .nav {
-    background-color: #3498db; // สีพื้นหลังของ navbar
-    padding: 10px 20px; // เพิ่ม padding ให้ navbar
-    display: flex; // ใช้ flex เพื่อจัดการ layout
-    justify-content: space-between; // จัดตำแหน่งองค์ประกอบให้มีช่องว่างระหว่างกัน
-    align-items: center; // จัดให้อยู่กลางแนวตั้ง
-    color: #fff; // สีของตัวอักษร
-    border-radius: 8px; // มุมโค้งมน
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // เพิ่มเงาเพื่อให้มีมิติ
-
-    .nav-item {
-      display: flex;
-      margin: 0 10px; // ระยะห่างระหว่าง items
-      font-size: 1rem;
-      cursor: pointer;
-
-      &:hover {
-        text-decoration: underline; // เส้นใต้เมื่อ hover
-      }
+    &:hover {
+      text-decoration: underline;
     }
+  }
 
-    .logo {
-      font-weight: bold;
-      font-size: 1.5rem;
-    }
+  .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
   }
 }

@@ -1,11 +1,10 @@
-// @import "@/styles/_color.scss";
 // การตั้งค่าการรีเซ็ตสไตล์พื้นฐาน
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  // box-sizing: border-box;
 }
 
 // การตั้งค่าฟอนต์และสีพื้นหลัง
